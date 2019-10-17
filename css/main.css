@@ -175,6 +175,7 @@ body{
   font-size: 36px;
   color: #355084;
   text-transform: uppercase;
+  margin-top: 0px;
 }
 
 .caption::before{
@@ -191,6 +192,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #afafaf;
+  line-height: 1.6rem;
 }
 
 .about-photo{
@@ -286,12 +288,15 @@ body{
 }
 
 .activities-inner>.caption{
-  text-align: center;
   margin: 0 0 70px 0;
 }
 
 .caption.line-center::before{
   left: calc(50% - 30px);
+}
+
+.caption.line-center{
+  text-align: center;
 }
 
 .activities-background-overlay{
@@ -368,7 +373,6 @@ body{
 
 .attorneys .description{
   margin-bottom: 50px;
-  line-height: 1.6rem;
   color: #8c92c3;
 }
 
@@ -440,4 +444,51 @@ body{
 .banner .arrow-wrapper {
   position: relative;
   top: 100px;
+}
+
+/* Languages */
+
+.languages-inner{
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.languages-list{
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* flex-grow: 2; */
+}
+
+.languages-list-item{
+  max-width: 255px;
+}
+
+.languages-item-caption{
+  font-size: 24px;
+  color: #30397b;
+  text-transform: uppercase;
+}
+
+.languages-list-item .description:nth-of-type(2n+1) {
+  margin-bottom: 35px;
+}
+
+.languages-list-item .description:nth-of-type(2n) {
+  margin-bottom: 20px;
+}
+
+.languages-item-more{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #d46232;
+  text-decoration: none;
 }
