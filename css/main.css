@@ -175,7 +175,7 @@ body{
   font-size: 36px;
   color: #355084;
   text-transform: uppercase;
-  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .caption::before{
@@ -491,4 +491,65 @@ body{
   font-weight: bold;
   color: #d46232;
   text-decoration: none;
+}
+
+/* News */
+
+.news{
+  position: relative;
+  background-color: #f7f7f8;
+  background-image: url(../img/circle.png);
+  background-repeat: no-repeat;
+  background-position: bottom -400px right -300px;
+}
+.news-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0 50px 0;
+}
+
+.news-list-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 60px;
+}
+
+.news-item{
+  max-width: 440px;
+  border-bottom: 1px solid #bfbebe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-item:nth-of-type(2n+1){
+  margin-right: 110px;
+}
+
+.news-item-caption{
+  font-size: 24px;
+  color: #303b7b;
+}
+
+.news-item-arrow{
+  display: inline-block;
+  color: #d46233;
+  text-decoration: none;
+  margin: 20px 0px;
+}
+
+.news-item-arrow>i{
+  font-size: 30px;
+}
+
+.news .caption{
+  margin: 0;
+}
+
+.news .matrix{
+  position: absolute;
+  left: -30px;
+  top: -100px;
 }
