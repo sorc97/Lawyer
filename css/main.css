@@ -14,11 +14,17 @@ body{
 
 /* Navigation */
 
+.header{
+  height: 100vh;
+  min-height: 550px;
+}
+
+
 .navigation{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  height: 15%;
 }
 
 .logo{
@@ -79,7 +85,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 85vh;
+  height: 85%;
   background: url(../img/photoBg.jpeg) no-repeat right;
   overflow: hidden;
 }
@@ -103,7 +109,6 @@ body{
   transform: skew(20deg) translateX(-50px);
   z-index: 2;
   overflow: hidden;
-  /* background-color: #d45f31de; */
 }
 
 .overlay-image-content{
@@ -144,3 +149,70 @@ body{
   color: #fff;
   cursor: pointer;
 }
+
+/* About */
+
+.about{
+  position: relative;
+}
+
+.about-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.about-text{
+  max-width: 515px;
+}
+
+.caption{
+  position: relative;
+  font-size: 36px;
+  color: #355084;
+  text-transform: uppercase;
+  /* margin-top: 0px; */
+}
+
+.caption::before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  width: 60px;
+  height: 4px;
+  background-color: #d46232;
+}
+
+.description{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #afafaf;
+}
+
+.about-photo{
+  max-width: 400px;
+}
+
+.about-photo img{
+  width: 100%;
+}
+
+.matrix{
+  position: absolute;
+  opacity: 0.6;  
+}
+
+.about .matrix:nth-of-type(1){
+  left: -30px;
+  top: 10%;
+}
+
+.about .matrix:nth-of-type(2){
+  /* opacity: 0.6; */
+  right: 7%;
+  bottom: 5%;
+}
+
