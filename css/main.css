@@ -173,7 +173,6 @@ body{
   font-size: 36px;
   color: #355084;
   text-transform: uppercase;
-  /* margin-top: 0px; */
 }
 
 .caption::before{
@@ -211,8 +210,81 @@ body{
 }
 
 .about .matrix:nth-of-type(2){
-  /* opacity: 0.6; */
   right: 7%;
   bottom: 5%;
 }
 
+/* Activities */
+
+.activities{
+  height: 100vh;
+  min-height: 600px;
+  background-color: #f7f7f8;
+  background-image: url(../img/circle.png);
+  background-repeat: no-repeat;
+  background-position: top -400px left -400px;
+}
+
+.activities-inner{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.activities-list{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.activities-list-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 340px;
+  height: 450px;
+  background-color: #000;
+}
+
+.activities-list-item:nth-of-type(1) {
+  background-image: url(../img/activities1.jpeg);
+}
+
+.activities-list-item:nth-of-type(2) {
+  background-image: url(../img/activities2.jpeg);
+}
+
+.activities-list-item:nth-of-type(3) {
+  background-image: url(../img/activities3.jpeg);
+}
+
+.activity-caption{
+  font-size: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.activities-list-item .activity-arrow{
+  position: absolute;
+  bottom: 70px;
+  left: calc(50% - 13px);
+  color: #fff;
+  font-size: 26px;  
+  text-align: center;
+  cursor: pointer;
+}
+
+.activities-inner>.caption{
+  text-align: center;
+  margin: 0 0 70px 0;
+}
+
+.caption.line-center::before{
+  left: calc(50% - 30px);
+}
