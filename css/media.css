@@ -1,18 +1,141 @@
 @media screen and (max-width: 1199px) {
-  .activities{
+  .activities-inner, .languages-inner, .about-inner, .attorneys-inner{
+    padding: 80px 0px;
     height: auto;
     min-height: auto;
+  }
+
+  .activities-background-overlay{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  } 
+
+  .languages-list{
+    justify-content: space-evenly;
+  }
+
+  .languages-list-item{
+    margin: 0 20px 20px 0;
+  }
+
+  .activities-list{
+    justify-content: center;
+  }
+
+  .activities-list-item{
+    margin: 0px 20px 20px 0px;
+  }
+
+  .attorneys-img-wrapper{
+    width: 47%;
+  }
+
+  .news-list-wrapper{
+    justify-content: center;
+  }
+
+  .news-item:nth-of-type(2n+1){
+    margin-right: 0px;
   }
 }
 
 @media screen and (max-width: 991px) {
+
+  .activities-inner, .languages-inner, .about-inner, .attorneys-inner{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .slogan-caption {
+    font-size: 70px;
+  }
   
+  .about-inner{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-photo{
+    margin-top: 30px;
+  }
+
+  .caption::before{
+    left: calc(50% - 30px);
+  }
+  
+  .caption{
+    text-align: center;
+    /* margin-top: 30px; */
+    font-size: 32px;
+  }
+
+  .activities-list-item {
+    width: 300px;
+    height: 410px;
+  }
+
+  .attorneys-inner{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .activity-caption{
+    font-size: 22px;
+  }
+
+  .attorneys-text{
+    padding: 0px;
+    margin: 0 0 40px 0;
+    text-align: center;
+  }
+
+  .attorneys-text>.description{
+    margin-bottom: 20px;
+  }
+
+  .address-caption, .address-email, .address-number{
+    font-size: 20px;
+  }
+
+  .feedback-form{
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  
+  /* .activities-list-item {
+    width: 300px;
+    height: 410px;
+  } */
+
+  .navigation{
+    display: none;
+  }
+
+  .menu-icon{
+    display: inline;
+  }
+
+  .img-description{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 575px) {
   
+  .slogan-caption{
+    font-size: 55px;
+  }
+
+  .img-description{
+    font-size: 16px;
+    bottom: 20px;
+    left: 20px;
+  }
 }

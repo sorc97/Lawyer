@@ -21,7 +21,7 @@ body{
 }
 
 
-.navigation{
+.header-inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,6 +78,12 @@ body{
 
 .menu-item:hover a{
   color: #355184c2;
+}
+
+.menu-icon{
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 /* Slogan */
@@ -164,6 +170,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
   min-height: 650px;
 }
@@ -224,8 +231,6 @@ body{
 
 .activities{
   position: relative;
-  height: 100vh;
-  min-height: 600px;
   background-color: #f7f7f8;
   background-image: url(../img/circle.png);
   background-repeat: no-repeat;
@@ -234,7 +239,8 @@ body{
 }
 
 .activities-inner{
-  height: 100%;
+  height: 100vh;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,12 +349,13 @@ body{
   background-position: bottom left;
   /* background-color: #2e3675b7; */
   z-index: 1;
-  padding: 315px 0 100px 0;
 }
 
 .attorneys-inner{
   display: flex;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
+  padding: 315px 0 100px 0;
 }
 
 .attorneys::before{
@@ -366,6 +373,7 @@ body{
 .attorneys-text{
   max-width: 270px;
   padding-top: 110px;
+  margin-right: 20px;
 }
 
 .attorneys .caption{
@@ -395,9 +403,14 @@ body{
   cursor: pointer;
   transition: all .4s ease;
 }
+
 .attorneys-img-wrapper:hover{
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   opacity: 0.7;
+}
+
+.attorneys-img{
+  width: 100%;
 }
 
 .attorneys-imgs{
@@ -585,14 +598,15 @@ body{
 }
 
 .address{
-  padding-left: 8%;
+  /* padding-left: 8%; */
   height: 400px;
   width: 50%;
-  min-width: 400px;
+  min-width: 320px;
   border: 1px solid #4e59a3;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .address:nth-of-type(1) {
