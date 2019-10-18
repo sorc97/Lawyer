@@ -553,3 +553,127 @@ body{
   left: -30px;
   top: -100px;
 }
+
+/* Contacts */
+
+.contacts{
+  position: relative;
+  /* background-color: #000e7bd2;   */
+  background: url(../img/contactsBg.jpeg) no-repeat;
+  background-position: bottom -100px left -100px;
+  padding: 90px 0 110px 0;
+  z-index: 1;
+}
+
+.contacts::before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #000e7bd2;
+  z-index: -2;
+}
+
+.address-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+
+.address{
+  padding-left: 8%;
+  height: 400px;
+  width: 50%;
+  min-width: 400px;
+  border: 1px solid #4e59a3;
+
+  display: flex;
+  align-items: center;
+}
+
+.address:nth-of-type(1) {
+  border-right: 0px;
+}
+
+.address-caption{
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 55px 0;
+  line-height: 2.5rem;
+}
+
+.address-email{
+  color: #fff;
+  font-size: 22px;
+}
+
+.address-number{
+  margin: 40px 0 20px 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.address .description{
+  color: #828abc;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.feedback-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-wrapper>.caption{
+  color: #fff;
+}
+
+.feedback-form{
+  width: 70%;
+  max-width: 540px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.text-fields> *{
+  width: 49%;
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #4e59a3;
+  padding: 20px 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.text-fields> *::placeholder{
+  color: #fff;
+}
+
+.text-fields>*:focus{
+  outline: none;
+}
+
+input[name='message'] {
+  width: 99%;
+}
+
+button[name='send'] {
+  color: #fff;
+  border: none;
+  background-color: #d46232;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 15px 85px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+button[name='send']:hover{
+  background-color: #d64a0d;  
+}
