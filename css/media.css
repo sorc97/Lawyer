@@ -5,6 +5,10 @@
     min-height: auto;
   }
 
+  .about{
+    background: url(../img/matrix.png) no-repeat right 5% bottom 3%;
+  }
+
   .activities-background-overlay{
     display: none;
   }
@@ -174,6 +178,10 @@
 
   .languages-item-caption{
     font-size: 22px;
+  }
+
+  .matrix{
+    display: none;
   }
 
   .footer-inner{

@@ -6,7 +6,6 @@ let isMenuActive = false;
 
 class mobileMenu {
   constructor(items) {
-    
     let ul = document.createElement('ul');
     ul.className = 'mobileMenu';
     ul.addEventListener('click', () => toggleMenu());
