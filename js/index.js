@@ -1,15 +1,21 @@
 'use strict'
 
-const mobileMenuButton = document.querySelector('.menu-icon');
+const mobileMenuToggler = document.querySelector('.menu-icon');
 const menuItems = document.querySelectorAll('.menu-item');
 let isMenuActive = false;
 
-class mobileMenu {
+// Menu Component
+class MobileMenu {
   constructor(items) {
-    let ul = document.createElement('ul');
-    ul.className = 'mobileMenu';
-    ul.addEventListener('click', () => toggleMenu());
-    ul.innerHTML = '<li class="mobileMenu-closeButton">&times;</li>';
+    //Menu wrapper
+    let menuWrapper = document.createElement('div');
+    menuWrapper.className = 'mobileMenu';
+    menuWrapper.innerHTML = '<span class="mobileMenu-closeButton">&times;</span>';
+    menuWrapper.addEventListener('click', () => toggleMenu());
+    //Menu list
+    let menuList = document.createElement('ul');
+    menuList.className = 'mobileMenu-list';
+    menuWrapper.append(menuList);
     
     const createLi = text => {
       let li = document.createElement('li');
@@ -18,9 +24,9 @@ class mobileMenu {
       return li;
     }
 
-    items.forEach(item => ul.append(createLi(item.innerHTML)));
+    items.forEach(item => menuList.append(createLi(item.innerHTML)));
 
-    return ul;
+    return menuWrapper;
   }
 }
 
@@ -31,7 +37,7 @@ function toggleMenu() {
   isMenuActive = !isMenuActive;
 }
 
-mobileMenuButton.addEventListener('click', () => {
+mobileMenuToggler.addEventListener('click', () => {
   let menu = document.querySelector('.mobileMenu');
 
   if(menu) {
@@ -39,6 +45,6 @@ mobileMenuButton.addEventListener('click', () => {
     return;
   }
 
-  mobileMenuButton.after(new mobileMenu(menuItems));
+  mobileMenuToggler.after(new MobileMenu(menuItems));
   isMenuActive = true;
 })
