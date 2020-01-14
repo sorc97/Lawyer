@@ -15,6 +15,7 @@
 }
 
 @media screen and (max-width: 1090px) {
+  
   .container{
     padding-left: 20px;
     padding-right: 20px;
@@ -29,10 +30,10 @@
   }
 
   .activities-list{
-    justify-content: center;
+    overflow: auto;
   }
 
-  .activities-list-item{
+  .activities-item{
     margin: 0px 20px 20px 0px;
   }
 
@@ -51,13 +52,19 @@
 
 @media screen and (max-width: 991px) {
 
-  .activities-inner, .languages-inner, .about-inner, .attorneys-inner{
+  :root {
+    font-size: 15px;
+  }
+  
+  .activities-inner, .languages-inner, .about-inner, .attorneys-inner, .news-inner{
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  .slogan-caption {
-    font-size: 70px;
+  .inner-fullHeight{
+    height: auto;
+    min-height: none;
+    max-height: none;
   }
   
   .about-inner{
@@ -66,7 +73,7 @@
   }
 
   .about-photo{
-    margin-top: 30px;
+    margin-top: 2rem;
   }
 
   .caption::before{
@@ -75,12 +82,11 @@
   
   .caption{
     text-align: center;
-    /* margin-top: 30px; */
-    font-size: 32px;
+    /* font-size: 32px; */
   }
 
-  .activities-list-item {
-    width: 300px;
+  .activities-item {
+    min-width: 300px;
     height: 410px;
   }
 
@@ -111,11 +117,15 @@
     margin-top: 50px;
   }
 }
+/* ? 768 instead of 767 */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 767px) {
+  :root {
+    font-size: 14px;
+  }
 
   .slogan-caption{
-    font-size: 55px;
+    font-size: 4rem;
   }
 
   .navigation{
@@ -154,16 +164,21 @@
 
 @media screen and (max-width: 575px) {
 
+  :root {
+    font-size: 13px;
+  }
+
   .caption{
-    font-size: 28px;
+    /* font-size: 28px; */
   }
 
   .slogan-caption{
-    font-size: 35px;
+    font-size: 3.5rem;
+    line-height: 5rem; /*?*/
   }
 
-  .activities-list-item{
-    margin-right: 0px;
+  .slogan-secondBg {
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
   }
   
   .img-description{
