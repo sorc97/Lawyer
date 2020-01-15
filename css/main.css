@@ -508,9 +508,10 @@ ul {
   bottom: 10%;
   left: 10%;
   margin: 0;
-  color: var(--text-secondary-color);
-  text-transform: uppercase;
+  padding-right: .5rem;
   font-size: var(--caption-size);
+  text-transform: uppercase;
+  color: var(--text-secondary-color);
 }
 
 /* Banner */
@@ -709,6 +710,7 @@ ul {
 .address .description{
   color: var(--text-darkBg-color);
   font-family: var(--font-primary);
+  margin: 0px;
 }
 
 /* Feedback */

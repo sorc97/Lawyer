@@ -69,9 +69,15 @@
   }
 
   .attorneys-inner{
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
+
+  .attorneys-imgs {
+    width: 70%;
+  } 
 
   .attorneys-text{
     padding: 0px;
@@ -105,6 +111,10 @@
 
   .menu-icon{
     display: inline;
+  }
+
+  .attorneys-imgs {
+    width: 90%;
   }
 
   .languages-item {
@@ -147,6 +157,10 @@
   .slogan-secondBg {
     clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
   }
+
+  .attorneys-imgs {
+    width: 100%;
+  } 
   
   .img-description{
     font-size: 1.2rem;
